@@ -1,8 +1,19 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import IntroSelection from "./pages/IntroSelection"
+import MainLayout from "./pages/MainLayout"
+import InteractiveMode from "./pages/InteractiveMode"
+import CustomMode from "./pages/CustomMode"
+
+const router = createBrowserRouter([
+  { path: '/', element: <MainLayout />, children: [
+    { index: true, element: <IntroSelection /> },
+    { path: 'interactive', element: <InteractiveMode /> },
+    { path: 'custom', element: <CustomMode /> }
+  ] }
+])
 function App() {
   return (
-    <div className="dark:bg-neutral-800 min-h-screen">
-        <p className="font-bold text-xl dark:text-red-500">Hello</p>
-    </div>
+        <RouterProvider router={router} />
   )
 }
 
