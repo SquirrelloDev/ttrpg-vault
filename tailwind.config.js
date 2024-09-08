@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'house-bg' : "url('/public/images/house.png')",
+        'free-bg' : "url('/public/images/free.png')",
+      },
+      fontFamily: {
+        kalam: ['Kalam', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
