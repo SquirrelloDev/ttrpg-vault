@@ -6,6 +6,7 @@ type BasicTraits = {
     apperance: number
     size: number
     education: number
+    move: 8
 }
 type damageModValues = number | "1K4" | "1K6"
 type DerivedTraits = {

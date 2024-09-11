@@ -1,7 +1,9 @@
+import { CharacterJobType } from "./characterJobs"
+
 type CharacterData = {
     characterName: string
     age: number
-    job: string
+    job: CharacterJobType
     gender: "M" | "K"
     domicile: string
     placeOfBirth: string
