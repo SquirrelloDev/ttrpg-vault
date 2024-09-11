@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'house-bg' : "url('/public/images/house.png')",
-        'free-bg' : "url('/public/images/free.png')",
+        'house-bg' : "url('/images/house.png')",
+        'free-bg' : "url('/images/free.png')",
       },
       fontFamily: {
         kalam: ['Kalam', 'sans-serif']

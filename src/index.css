@@ -3,5 +3,5 @@
 @tailwind utilities;
 @font-face {
     font-family: 'Kalam';
-    src: url('/public/fonts/Kalam-Regular.ttf');
+    src: url('/fonts/Kalam-Regular.ttf');
 }
