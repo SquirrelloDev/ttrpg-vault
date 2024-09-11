@@ -17,4 +17,4 @@ type DerivedTraits = {
     damageMod: damageModValues
     build: number
 }
-export type CharaterTraits = BasicTraits & DerivedTraits
+export type CharacterTraits = BasicTraits & DerivedTraits
