@@ -3,7 +3,7 @@ import { CharacterJobType } from "./characterJobs"
 type CharacterData = {
     characterName: string
     age: number
-    job: CharacterJobType
+    job: CharacterJobType | null
     gender: "M" | "K"
     domicile: string
     placeOfBirth: string

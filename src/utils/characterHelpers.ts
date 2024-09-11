@@ -9,7 +9,7 @@ export const initCharData = (): CharacterData => {
         ideology: '',
         importantPeople: '',
         importantPlaces: '',
-        job: '',
+        job: null,
         mysteryItems: '',
         perks: '',
         personalBelongings: '',
