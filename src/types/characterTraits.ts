@@ -9,13 +9,13 @@ export type BasicTraits = {
     education: number
     move: number
 }
-type damageModValues = number | "1K4" | "1K6"
+export type DamageModValues = number | "1K4" | "1K6"
 export type DerivedTraits = {
     healthPoints: number
     sanityPoints: number
     magicPoints: number
     luckPoints: number
-    damageMod: damageModValues
+    damageMod: DamageModValues
     build: number
 }
 export type CharacterTraits = BasicTraits & DerivedTraits
