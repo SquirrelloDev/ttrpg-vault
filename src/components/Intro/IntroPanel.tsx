@@ -22,7 +22,7 @@ function IntroPanel({
       {secondSubtitle && (
         <p className="dark:text-white text-lg font-kalam">{secondSubtitle}</p>
       )}
-      <Button title="Rozpocznij" onClickHandler={buttonFunction} />
+      <Button onClickHandler={buttonFunction} >Rozpocznij</Button>
     </div>
   );
 }
