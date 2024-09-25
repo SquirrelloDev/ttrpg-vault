@@ -12,6 +12,9 @@ export default {
       },
       fontFamily: {
         kalam: ['Kalam', 'sans-serif']
+      },
+      gridTemplateColumns: {
+        'char-traits': 'minmax(0,1fr) 200px minmax(0,1fr)'
       }
     },
   },
