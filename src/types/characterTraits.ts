@@ -1,15 +1,16 @@
-type BasicTraits = {
+export type BasicTraits = {
     strength: number
     constitution: number
     dexterity: number
+    power: number
     intelligence: number
     apperance: number
     size: number
     education: number
-    move: 8
+    move: number
 }
 type damageModValues = number | "1K4" | "1K6"
-type DerivedTraits = {
+export type DerivedTraits = {
     healthPoints: number
     sanityPoints: number
     magicPoints: number
