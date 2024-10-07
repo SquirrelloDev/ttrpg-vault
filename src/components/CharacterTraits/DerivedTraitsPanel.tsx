@@ -18,12 +18,12 @@ function DerivedTraitsPanel(){
         return { damage: 0, build: 0 }
     }, [traits.size, traits.strength])
     return (
-        <Panel classNames="row-span-2">
-            <DerivedTrait title="PŻ" traitValue={hpValue}/>
-            <DerivedTrait title="PM" traitValue={mpValue}/>
-            <DerivedTrait title="PP" traitValue={traits.power}/>
-            <DerivedTrait title="MO" traitValue={damageModBuildValue.damage}/>
-            <DerivedTrait title="Krzepa" traitValue={damageModBuildValue.build}/>
+        <Panel classNames="row-span-2" defaultPadding={false}>
+            <DerivedTrait title="PŻ" traitKey="healthPoints" traitValue={hpValue}/>
+            <DerivedTrait title="PM" traitKey="magicPoints" traitValue={mpValue}/>
+            <DerivedTrait title="PP" traitKey="sanityPoints" traitValue={traits.power}/>
+            <DerivedTrait title="MO" traitKey="damageMod" traitValue={damageModBuildValue.damage}/>
+            <DerivedTrait title="Krzepa" traitKey="build" traitValue={damageModBuildValue.build}/>
         </Panel>
     )
 }

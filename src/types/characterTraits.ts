@@ -19,3 +19,4 @@ export type DerivedTraits = {
     build: number
 }
 export type CharacterTraits = BasicTraits & DerivedTraits
+export type HoverKeys = Omit<CharacterTraits, 'move'>

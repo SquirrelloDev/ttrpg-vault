@@ -1,0 +1,58 @@
+{
+    "strength": {
+        "name": "Siła",
+        "description": "Siła jest miarą tężyzny fizycznej badacza. Określa, jak duże obciążenie może unieść badacz bez zmęczenia lub spowolnienia w postaci ciężkich artefaktów lub wyposażenia. Określa również sprawność w testach siły, np. w przesuwaniu ciężkich przedmiotów, forsowanie drzwi lub uwalnianie się ze sideł na niedźwiedzie. Ponadto Siła określa ilość zadawanych obrażeń w walce wręcz, jak i również wartość obrony w walce, np. wyrywanie się z ucisku wielkich węży."
+    },
+    "constitution": {
+        "name": "Kondycja",
+        "description": "Kondycja reprezentuje fizyczną wytrzymałość, zdrowie oraz odporność na zmęczenie, obrażenia i choroby. Wyższa wartość kondycji pozwala lepiej opierać się zakażeniom i chorobom przed podjęciem próby leczenia, jak również i szokowi wywoływanego przez otrzymanie brutalnych obrażeń. Ponadto badacze z lepszą kondycją, szybciej regenerują siły i szybciej powracają do zdrowia. Dodatkowo, kondycja określa przystosowanie do długich wysiłków fizycznych jak pływanie, bieg czy wspinaczka."
+    },
+    "power": {
+        "name": "Moc",
+        "description": "Moc reprezentuje siłę woli, mentalną odporność oraz zdolności parapsychiczne badacza.\n Cecha ta wpływa na posiadaną ilość Punktów Magii potrzebnych do rzucania zaklęć oraz korzystania z nadprzyrodzonych zdolności takich jak telekineza, jasnowidzenie czy komunikacja z istotami z innych wymiarów. Ponadto cecha ta określa zdolność do opierania się wpływom psychicznym (jak kontrola umysłu) i szaleństwu.\n Moc jest też kluczowa przy powiązanych testach, np. przy odprawianiu mrocznego rytuału"
+    },
+    "dexterity": {
+        "name": "Zręczność",
+        "description": "Zręczność reprezentuje fizyczną sprawność, refleks, koordynację ruchową oraz zdolność do szybkiego reagowania na bodźce. Badacze z wyższą Zręcznością sprawniej poruszają się podczas walki oraz lepiej reagują na zagrożenia. Ponadto badacz sprawniej posługuje się bronią dystansową, lepiej się skrada, oraz ma predyspozycje do czynności wymagających precyzji i dokładności (np. otwieranie zamków, rozbrajanie pułapek)."
+    },
+    "apperance": {
+        "name": "Wygląd",
+        "description": "Wygląd odzwierciedla fizyczną prezencję postaci, jej urodę, charyzmę oraz postrzeganie postaci przez inne osoby. Badacze z wysoką wartością tej cechy robią lepsze “pierwsze wrażenie” na innych, co ułatwia im nawiązywanie kontaktów. Ponadto osoby te lepiej wyciągają informacje od innych osób. Jednakże badacze w konsekwencji stają się bardziej rozpoznawalne przez co ciężej się im ukryć w tłumie i mogą również stanowić cel ze strony mrocznych kultów."
+    },
+    "size": {
+        "name": "Budowa Ciała",
+        "description": "Budowa Ciała reprezentuje gabaryty postaci, w tym jej wzrost i masę. Budowa Ciała wpływa na zdrowie badacza, walkę oraz na zdolności społeczne. Badacze z wysoką wartością są na ogół masywniejsi i wyżsi, przez co ciężej ich powalić w walce kosztem braku możliwości przeciskania się przez ciasne przejścia, trudniejsze uniki lub cięższym wtopieniem się w tłum."
+    },
+    "intelligence": {
+        "name": "Inteligencja",
+        "description": "Inteligencja odzwierciedla zdolności umysłowe postaci, takie jak umiejętność logicznego myślenia, zdolność do rozwiązywania problemów, analiza informacji, a także kreatywność i intuicję.\n Badacz z wysoką inteligencją znacznie lepiej radzi sobie z rozwiązywaniem zagadek, lepiej dedukują i łączą fakty. Ponadto badacz znacznie lepiej przyswaja wiedzę z ksiąg i lepiej rozumie zjawiska nadprzyrodzone (kosztem utraty większej liczby poczytalności). Dodatkowym atutem jest umiejętność wyciągania ukrytych informacji z podtekstów w prowadzonych rozmowach"
+    },
+    "education": {
+        "name": "Wykształcenie",
+        "description": "Wykształcenie reprezentuje poziom formalnej edukacji i wiedzy ogólnej postaci. Cecha ta mierzy, jak dobrze jest wykształcony badacz w różnych dziedzinach. Wysoka wartość tej cechy pozwala badaczom na zrozumienie zawiłych pojęć i teorii przydatnych w różnych celach (rozwiązywanie zagadek, efektywniejsze korzystanie z bibliotek, większa wiarygodność w kręgu naukowym).\n Ponadto, badacze lepiej porozumiewają się z obcokrajowcami, lub mają większą wiedzę na temat języków wymarłych. "
+    },
+    "healthPoints": {
+        "name": "Punkty Życia",
+        "description": "Punkty Życia (PŻ) reprezentują ile badacz może przyjąć obrażeń zanim zostanie krytycznie ranny lub martwy.\n Punkty te są wyliczane poprzez dodanie wartości cech Kondycja oraz Budowa Ciała, a następnie dzieląc przez 10 i zaokrąglając w dół."
+    },
+    "magicPoints": {
+        "name": "Punkty Magii",
+        "description": "Punkty Magii (PM) reprezentują ilość energii mistycznej pozwalającej na rzucanie zaklęć, uruchamiania magicznych urządzeń i odprawianie rytuałów. Punkty te są wyliczane poprzez podzielenie wartości cechy Moc przez 5. \nPunkty Magii regenerują się podczas sesji, w wartości 1 punkt na godzinę w grze. Po wyczerpaniu puli punktów, dalsze starty są odejmowane od Punktów Życia i  konsekwencji badacze mogą nawet omdleć!"
+    },
+    "sanityPoints": {
+        "name": "Punkty Poczytalności",
+        "description": "Punkty Poczytalności lub Poczytalność (PP) reprezentują zdrowie psychiczne badacza. Ich wartość jest równa wartości cechy Moc. Punkty te są odejmowane gdy badacz napotka istoty nie z tego świata lub dowie się przerażającej prawdy o świecie. Skutki utraty poczytalności mogą być tymczasowe jak panika, halucynacje lub paraliż, albo nawet katastrofalne dla postaci jak długotrwałe szaleństwo, nowe fobie i manie.\n Gdy poczytalność spadnie do 0, postać kompletnie szaleje i nie da się jej już uratować..."
+    },
+    "luckPoints": {
+        "name": "Szczęście",
+        "description": "Szczęście reprezentuje zdolność do unikania niefortunnych wydarzeń i przyciągania pozytywnych okoliczności losu. Szczęście badacza jest określane sumą rzutu trzema kośćmi K6, pomnożoną przez 5.\n Szczęście może być wykorzystywane w różnych przypadkach, np. uniknięcia przykrych konsekwencji lub śmierci, znalezienie kluczowego przedmiotu lub wskazówki. \nSzczęście może też być wykorzystywane do obniżania wymogów innych testów poprzez wydawanie punktów. Ale uważaj, punkty szczęścia odzyskuje się losowo!"
+    },
+    "damageMod": {
+        "name": "Modyfikator obrażeń",
+        "description": "Modyfikator obrażeń (MO) reprezentuje ilość zadawanych dodatkowych obrażeń w Walce Wręcz. Wartość modyfikatora jest obliczana poprzez sumę Siły i Budowy Ciała oraz jest wyrażana jako liczba dodatkowych rzutów kośćmi (lub stałymi wartościami)"
+    },
+    "build": {
+        "name": "Krzepa",
+        "description": "Krzepa reprezentuje ogólną masę i tężyznę badacza. Krzepa jest wyliczana na podstawie sumy Siły i Budowy Ciała. Krzepa jest głównie wykorzystywana w walce podczas wykonywania manewrów takich jak siłowanie się na ręce, przewrócenie przeciwnika."
+    }
+}
