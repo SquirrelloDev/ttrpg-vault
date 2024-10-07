@@ -9,6 +9,7 @@ interface InteractiveFormStore{
     characterTraits: CharacterTraits
     characterSkills: CharacterSkills
     setCharacterName: (characterName: string) => void
+    setCharacterTraits: (traits: CharacterTraits) => void
     setCompletedSteps: (numberOfSteps: number) => void
 }
 const useInteractiveFormStore = create<InteractiveFormStore>()((set) => ({
@@ -18,6 +19,9 @@ const useInteractiveFormStore = create<InteractiveFormStore>()((set) => ({
     characterSkills: initCharacterSkills(),
     setCharacterName: (characterName) => {
         set((state) => ({ ...state, characterData: { ...state.characterData, characterName: characterName } }))
+    },
+    setCharacterTraits: (traits) => {
+        set({ characterTraits: traits })
     },
     setCompletedSteps: (numberOfSteps) => {
         set(() => ({ completedSteps: numberOfSteps }))

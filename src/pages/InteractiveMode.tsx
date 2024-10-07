@@ -14,7 +14,7 @@ function InteractiveMode() {
         <FormProgress currentStep={currentStep} setCurrentStep={setCurrentStep} steps={[{ id: 0, formPage: 'name' }, { id: 1, formPage: 'traits' }, { id: 2, formPage: 'job' }, { id: 3, formPage:'interests' }, { id: 4, formPage: 'background' }]} />
       </div>
       {Number(searchParams.get('p')) === 0 && <FormCharName setCurrentStep={setCurrentStep}/>} 
-      {Number(searchParams.get('p')) === 1 && <FormTraits />}
+      {Number(searchParams.get('p')) === 1 && <FormTraits setCurrentStep={setCurrentStep}/>}
     </div>
   );
 }
