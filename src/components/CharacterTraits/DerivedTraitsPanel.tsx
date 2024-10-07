@@ -3,6 +3,7 @@ import useMainTraitStore from "@/stores/mainTraitStore"
 import { useMemo } from "react"
 import DerivedTrait from "@/components/CharacterTraits/DerivedTrait"
 import { DamageModValues } from "@/types/characterTraits"
+import LuckRandomizer from "./LuckRandomizer"
 
 function DerivedTraitsPanel(){
     const traits = useMainTraitStore(state => state.traits)
@@ -24,6 +25,7 @@ function DerivedTraitsPanel(){
             <DerivedTrait title="PP" traitKey="sanityPoints" traitValue={traits.power}/>
             <DerivedTrait title="MO" traitKey="damageMod" traitValue={damageModBuildValue.damage}/>
             <DerivedTrait title="Krzepa" traitKey="build" traitValue={damageModBuildValue.build}/>
+            <LuckRandomizer />
         </Panel>
     )
 }

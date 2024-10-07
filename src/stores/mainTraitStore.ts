@@ -3,6 +3,8 @@ import { create } from "zustand";
 
 interface MainTraitStore{
     traits: BasicTraits
+    selectedLuck: number
+    setLuck: (luckValue: number) => void
     lastSelectedTraits: (keyof BasicTraits)[]
     setTrait: (traitKey: keyof BasicTraits, value: number) => void
     shiftLastSelectedTraits: () => void
@@ -18,6 +20,10 @@ const useMainTraitStore = create<MainTraitStore>()((set) => ({
         intelligence: 0,
         move: 8,
         size: 0,
+    },
+    selectedLuck: 0,
+    setLuck: (luckValue) => {
+        set({ selectedLuck: luckValue })
     },
     lastSelectedTraits: [],
     setTrait: (traitKey, value) => {

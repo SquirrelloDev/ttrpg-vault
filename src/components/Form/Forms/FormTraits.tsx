@@ -20,6 +20,7 @@ function FormTraits() {
   const shiftLastSelectedTraits = useMainTraitStore(
     (state) => state.shiftLastSelectedTraits
   );
+  const luckValue = useMainTraitStore(state => state.selectedLuck)
   const selectTraitHandler = () => {
     setTraitPoints((prevState) => {
       const helperArr = prevState;
@@ -29,7 +30,7 @@ function FormTraits() {
   };
   const undoSelectionHandler = () => {
     if (availableTraitPoints.length - traitPoints.length === 0) return;
-    
+
     const idxToUndo = availableTraitPoints.length - traitPoints.length - 1;
     const elementToUndo = availableTraitPoints[idxToUndo];
     console.log(availableTraitPoints);
@@ -55,7 +56,7 @@ function FormTraits() {
             />
             <DerivedTraitsPanel />
             <TraitDesc />
-            {lastSelectedTraits.length === 8 && (
+            {(lastSelectedTraits.length === 8 && luckValue !== 0) && (
               <Button onClickHandler={() => {}}>Dalej</Button>
             )}
           </div>
