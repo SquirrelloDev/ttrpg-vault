@@ -3,14 +3,11 @@ import FormTextInput from "@/components/UI/FormTextInput"
 import { FormProvider, useForm } from "react-hook-form"
 import useInteractiveFormStore from "@/stores/interactiveFormStore"
 import { useNavigate } from "react-router-dom"
-import { Dispatch, SetStateAction } from "react"
+import { InteractiveFormProps } from "@/types/formSteps"
 type FormCharNameValues = {
     charName: string
 }
-interface FormCharNameProps {
-    setCurrentStep: Dispatch<SetStateAction<number>>
-}
-function FormCharName({ setCurrentStep }: FormCharNameProps){
+function FormCharName({ setCurrentStep }: InteractiveFormProps){
     const methods = useForm<FormCharNameValues>()
     const setCharacterName = useInteractiveFormStore(state => state.setCharacterName)
     const setCompletedSteps = useInteractiveFormStore(state => state.setCompletedSteps)
