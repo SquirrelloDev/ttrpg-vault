@@ -28,6 +28,7 @@ export const initCharacterTraits = (): CharacterTraits => {
     dexterity: 0,
     intelligence: 0,
     apperance: 0,
+    power: 0,
     size: 0,
     move: 8,
     education: 0,
