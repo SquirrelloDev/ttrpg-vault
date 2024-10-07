@@ -5,3 +5,7 @@
     font-family: 'Kalam';
     src: url('/fonts/Kalam-Regular.ttf');
 }
+h1, h2, h3, h4, h5, h6, p, span {
+    color: #fff;
+    font-family: 'Kalam', sans-serif;
+}
