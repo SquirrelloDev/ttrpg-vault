@@ -7,31 +7,37 @@ import useMainTraitStore from "@/stores/mainTraitStore";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
-const availableTraitPoints = [40, 50, 50, 50, 60, 60, 70, 80]
+const availableTraitPoints = [40, 50, 50, 50, 60, 60, 70, 80];
 
 function FormTraits() {
-    const [traitPoints, setTraitPoints] = useState<number[]>([40, 50, 50, 50, 60, 60, 70, 80])
+  const [traitPoints, setTraitPoints] = useState<number[]>([
+    40, 50, 50, 50, 60, 60, 70, 80,
+  ]);
   const methods = useForm();
-  const lastSelectedTraits = useMainTraitStore(state => state.lastSelectedTraits)
-  const shiftLastSelectedTraits = useMainTraitStore(state => state.shiftLastSelectedTraits)
+  const lastSelectedTraits = useMainTraitStore(
+    (state) => state.lastSelectedTraits
+  );
+  const shiftLastSelectedTraits = useMainTraitStore(
+    (state) => state.shiftLastSelectedTraits
+  );
   const selectTraitHandler = () => {
-    setTraitPoints(prevState => {
-        const helperArr = prevState
-        helperArr[0] = NaN
-        return helperArr.filter(item => !isNaN(item))
-    })
-  }
+    setTraitPoints((prevState) => {
+      const helperArr = prevState;
+      helperArr[0] = NaN;
+      return helperArr.filter((item) => !isNaN(item));
+    });
+  };
   const undoSelectionHandler = () => {
-    console.log(traitPoints)
-    if(availableTraitPoints.length - traitPoints.length === 0) return;
-    const idxToUndo = (availableTraitPoints.length - traitPoints.length) - 1
-    const elementToUndo = availableTraitPoints[idxToUndo]
-    console.log(availableTraitPoints)
-    setTraitPoints(prevState => {
-      return [elementToUndo, ...prevState]
-    })
-    shiftLastSelectedTraits()
-  }
+    if (availableTraitPoints.length - traitPoints.length === 0) return;
+    
+    const idxToUndo = availableTraitPoints.length - traitPoints.length - 1;
+    const elementToUndo = availableTraitPoints[idxToUndo];
+    console.log(availableTraitPoints);
+    setTraitPoints((prevState) => {
+      return [elementToUndo, ...prevState];
+    });
+    shiftLastSelectedTraits();
+  };
   return (
     <FormProvider {...methods}>
       <div className="px-3 relative">
@@ -41,12 +47,18 @@ function FormTraits() {
           tym lepiej
         </h3>
         <form>
-            <div className="grid grid-cols-char-traits grid-rows-2 gap-3">
-            <MainTraitsPanel traitPoints={ traitPoints } selectTraitFn={selectTraitHandler} undoSelectionHandler={undoSelectionHandler}/>
+          <div className="grid grid-cols-char-traits grid-rows-2 gap-3">
+            <MainTraitsPanel
+              traitPoints={traitPoints}
+              selectTraitFn={selectTraitHandler}
+              undoSelectionHandler={undoSelectionHandler}
+            />
             <DerivedTraitsPanel />
             <TraitDesc />
-            {lastSelectedTraits.length === 8 && <Button onClickHandler={() => {}}>Dalej</Button>} 
-            </div>
+            {lastSelectedTraits.length === 8 && (
+              <Button onClickHandler={() => {}}>Dalej</Button>
+            )}
+          </div>
         </form>
       </div>
     </FormProvider>
